@@ -34,6 +34,7 @@
 	<meta property="twitter:image"
 		content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -96,7 +97,44 @@
 		</div>
 	</section>
 
-	<script src="js/script.js"></script>
+	<sections class="destinations">
+		<div class="destinations__title title">Popular destinations</div>
+		<div class="container__big">
+			<div class="slider">
+				<div class="image-slider swiper-container">
+					<div class="image-slider__wrapper swiper-wrapper">
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="./img/slider/image_3.png" alt="image">
+							</div>
+						</div>
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="./img/slider/image_1.png" alt="image">
+							</div>
+						</div>
+						<div class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img src="./img/slider/image_2.png" alt="image">
+							</div>
+						</div>
+						
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="destinations__btn">
+				<button class="button button__destinations"><img src="icons/arrow.svg" class="button__arrow" alt="arrow">Find More</button>
+			</div>
+		</div>
+	</sections>
+
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="./js/swiper.js"></script>
+	<script src="./js/script.js"></script>
 </body>
 
 </html>

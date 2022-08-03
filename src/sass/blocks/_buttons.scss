@@ -17,6 +17,23 @@
 		font-size: 24px;
 	}
 
+	&__destinations {
+		width: 228px;
+		height: 59px;
+		font-size: 24px;
+		line-height: 59px;
+
+		img {
+			width: 40px;
+			height: 40px;
+
+		}
+	}
+
+	&__arrow {
+		margin-right: 10px;
+	}
+
 	&:hover {
 		background: $white;
 		color: $main-color;

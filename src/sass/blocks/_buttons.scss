@@ -17,11 +17,13 @@
 		font-size: 24px;
 	}
 
-	&__destinations {
+	&__destinations,
+	&__stories {
 		width: 228px;
 		height: 59px;
 		font-size: 24px;
 		line-height: 59px;
+		
 
 		img {
 			width: 40px;
@@ -36,5 +38,14 @@
 	&:hover {
 		background: $white;
 		color: $main-color;
+	}
+}
+
+.button__destinations,
+.button__stories {
+	&:hover {
+		transform: scale(1.1);
+		background: $dark-blue;
+		color: $white;
 	}
 }

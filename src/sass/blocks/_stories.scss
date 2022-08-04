@@ -59,7 +59,22 @@
 			font-size: 18px;
 			line-height: 25px;
 			color: $dark-blue;
+			a {
+				color: $dark-blue;
+				font-weight: 700;
+				text-decoration: underline;
+				transition: all 0.3s ease 0s;
+
+				&:hover {
+					color: $main-color;
+				}
+			}
 		}
 	}
 
+	&__btn {
+		padding: 10px;
+		margin-top: 30px;
+		text-align: center;
+	}
 }

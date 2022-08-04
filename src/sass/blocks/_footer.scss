@@ -1,0 +1,52 @@
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+
+	&__empty {
+		width: 100%;
+		max-width: 140px;
+	}
+
+	&__body {
+		height: 61px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__icons {
+		width: 100%;
+		max-width: 140px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__rights {
+		font-family: 'Red Hat Text';
+		font-weight: 500;
+		font-size: 16px;
+		color: $white;
+	}
+
+	&__icon {
+		width: 34px;
+		margin-right: 20px;
+		pad: 5px;
+		transition: all 0.3s ease 0s;
+
+		img {
+			max-width: 100%;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover {
+			transform: scale(1.3);
+		}
+	}
+}

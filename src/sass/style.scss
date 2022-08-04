@@ -9,6 +9,10 @@
     padding: 0;
 }
 
+main {
+	position: relative;
+}
+
 .container {
 	max-width: 1440px;
 	overflow: hidden;
@@ -25,3 +29,4 @@
 @import 'blocks/destinations'; 
 @import 'blocks/slider'; 
 @import 'blocks/stories'; 
+@import 'blocks/footer'; 

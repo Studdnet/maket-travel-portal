@@ -35,14 +35,14 @@
 		content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
 
-<!-- favicon -->
-		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-		<link rel="manifest" href="img/favicon/site.webmanifest">
-		<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="theme-color" content="#ffffff">
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
@@ -73,26 +73,28 @@
 							</ul>
 						</nav>
 						<div>
-							<button class="header__button button">Login</button>
+							<button class="header__button button" id="login">Login</button>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="header__content">
-				<div class="container">
-					<div class="content__body">
-						<div class="content__title">
-							<h1>Explore the beauty of the World</h1>
+			<div class=" header__content">
+								<div class="container">
+									<div class="content__body">
+										<div class="content__title">
+											<h1>Explore the beauty of the World</h1>
+										</div>
+										<div class="content__descr">Receive personalized recommendations for countries, hotels,
+											activities and
+											more</div>
+										<form action="https://www.google.com/search" method="get" class="content__form">
+											<input type="text" name="q" placeholder="What would you like to do?"
+												class="form__input">
+											<button class="button__content button" type="submit">Start Planning</button>
+										</form>
+									</div>
+								</div>
 						</div>
-						<div class="content__descr">Receive personalized recommendations for countries, hotels, activities and
-							more</div>
-						<form action="https://www.google.com/search" method="get" class="content__form">
-							<input type="text" name="q" placeholder="What would you like to do?" class="form__input">
-							<button class="button__content button" type="submit">Start Planning</button>
-						</form>
-					</div>
-				</div>
-			</div>
 		</section>
 
 		<section class="trips">
@@ -259,25 +261,49 @@
 
 		<footer class="footer">
 			<div class="container">
-					<div class="footer__body">
-						<div class="footer__empty"></div>
-						<div class="footer__rights">All Rights Reserved © Travel Portal</div>
-						<div class="footer__icons">
-							<div class="footer__icon">
-								<a href="https://www.instagram.com/" target="_blank"><img src="icons/insta.svg" alt="instagram"></a>
-							</div>
-							<div class="footer__icon">
-								<a href="https://www.youtube.com/" target="_blank"><img src="icons/youtube.svg" alt="youtube"></a>
-							</div>
-							<div class="footer__icon">
-								<a href="https://twitter.com/?lang=ru" target="_blank"><img src="icons/twitter.svg" alt="twitter"></a>
-							</div>
+				<div class="footer__body">
+					<div class="footer__empty"></div>
+					<div class="footer__rights">All Rights Reserved © Travel Portal</div>
+					<div class="footer__icons">
+						<div class="footer__icon">
+							<a href="https://www.instagram.com/" target="_blank"><img src="icons/insta.svg"
+									alt="instagram"></a>
+						</div>
+						<div class="footer__icon">
+							<a href="https://www.youtube.com/" target="_blank"><img src="icons/youtube.svg" alt="youtube"></a>
+						</div>
+						<div class="footer__icon">
+							<a href="https://twitter.com/?lang=ru" target="_blank"><img src="icons/twitter.svg"
+									alt="twitter"></a>
 						</div>
 					</div>
+				</div>
 			</div>
 		</footer>
-
 	</main>
+
+	<div class="forms">
+		<div class="forms__overlay">
+			<div class="forms__login">
+				<h3 class="forms__title">Log in to your account</h3>
+				<div class="forms__close" id="close"><img src="img/close.svg" alt="close"></div>
+
+				<div class="forms__buttons">
+					<button class="forms__button forms__button_facebook">
+						<img src="img/facebook.svg" alt="facebook">
+						Sign In with Facebook
+					</button>
+					<button class="forms__button forms__button_google">
+						<img src="img/Google Logo.svg" alt="google">
+						Sign In with Google
+					</button>
+				</div>
+
+				<form action="#">
+				</form>
+			</div>
+		</div>
+	</div>
 
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="./js/swiper.js"></script>

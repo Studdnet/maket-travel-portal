@@ -1,3 +1,18 @@
+const buttonClose = document.getElementById('close'),
+		buttonLogin = document.getElementById('login'),
+		forms = document.querySelector('.forms'); 
+
+buttonClose.addEventListener("click", () => {
+	forms.style.opacity = '0'; 
+	forms.style.visibility = 'hidden'; 
+});
+
+buttonLogin.addEventListener("click", () => {
+	forms.style.opacity = '1'; 
+	forms.style.visibility = 'visible'; 
+});
+
+
 let scrollUp = () => {
    let scrollProgress = document.querySelector('.arrowUp');
    let pos = document.documentElement.scrollTop; 

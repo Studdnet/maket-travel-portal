@@ -299,8 +299,28 @@
 					</button>
 				</div>
 
-				<form action="#">
+				<div class="forms__divider">
+					<div class="divider__text">or</div>
+				</div>
+
+				<form class="form form__login" action="#">
+					<div class="form__field form__field_email">
+						<label class="form__label" for="email">E-mail</label>
+						<input type="text" class="form__input form__input_email" id="email" required>
+					</div>
+
+					<div class="form__field form__field_password">
+						<label class="form__label" for="password">Password</label>
+						<input type="password" class="form__input form__input_password" id="password" required>
+					</div>
+
+					<input type="button" class="button button__form" value="Sign In">
+					
+					<div class="form__forgot"><a href="#" class="form__forgot_link">Forgot Your Password?</a></div>			
 				</form>
+
+				<div class="forms__register">Don’t have an account? <a href="#" class="forms__register_link">Register</a></div>
+				
 			</div>
 		</div>
 	</div>

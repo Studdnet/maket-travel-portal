@@ -1,7 +1,7 @@
 .forms {
-	transition: all 0.5s ease 0s;
 	opacity: 0;
 	visibility: hidden;
+	transition: opacity 0.5s ease 0s;
 
 	&__overlay {
 		display: flex;
@@ -19,7 +19,6 @@
 		padding: 25px 15px 25px 15px;
 		position: relative;
 		width: 650px;
-		height: 660px;
 		background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 		border-radius: 16px;
@@ -74,4 +73,108 @@
 			color: $dark-blue;
 		}
 	}
+
+	&__divider {
+		max-width: 100%;
+		margin-top: 30px;
+	}
+
+	.divider {
+		&__text {
+			position: relative;
+			text-align: center;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 24px;
+			color: rgba(13, 96, 111, 0.5);
+
+			&::after,
+			&::before {
+				display: block;
+				content: '';
+				width: 46%;
+				height: 1px;
+				background-color: rgba(13, 96, 111, 0.5);
+				position: absolute;
+				top: 10px;
+			}
+
+			&::after {
+				left: 0;
+			}
+
+			&::before {
+				right: 0;
+			}
+		}
+	}
+
+	.form {
+
+		border-bottom: 1px solid $dark-blue;
+
+		&__field {
+			margin-top: 10px;
+			display: flex;
+			flex-direction: column;
+			font-weight: 400;
+			font-size: 16px;
+			color: $dark-blue;
+
+			&_password {
+				margin-top: 20px;
+			}
+		}
+
+		&__input {
+			height: 54px;
+			background: $white;
+			box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+			border-radius: 10px;
+			color: #0D606F;
+			font-size: 20px;
+			padding: 0px 10px;
+
+			&:focus {
+				outline: 2px solid $dark-blue;
+			}
+		}
+
+		.button__form {
+			margin-top: 25px;
+		}
+
+		&__forgot {
+			margin-top: 10px;
+			margin-bottom: 25px;
+			text-align: center;
+
+			&_link {
+				font-weight: 700;
+				font-size: 16px;
+				text-decoration-line: underline;
+				color: $dark-blue;
+				text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+			}
+		}
+	}
+
+	&__register {
+		text-align: center;
+		margin-top: 20px;
+		font-weight: 700;
+		font-size: 15px;
+		color: rgba(13, 96, 111, 0.5);
+		text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+		&_link {
+			text-decoration: none;
+			color: $dark-blue;
+			transition: color 0.3s ease 0s;
+			&:hover {
+				text-decoration: none;
+				color: $main-color;
+			}
+		}
+	}
+
 }

@@ -9,20 +9,29 @@ const buttonsClose = document.querySelectorAll('.forms__close'),
 buttonsClose.forEach(button => button.addEventListener("click", function() {
 	forms.style.opacity = '0'; 
 	forms.style.visibility = 'hidden'; 
+	loginForm.style.opacity = '1'; 
+	loginForm.style.visibility = 'visible';
+	loginForm.style.display = 'block'; 
+	registrationForm.style.opacity = '0'; 
+	registrationForm.style.visibility = 'hidden'; 
 }));
 
 
 buttonLogin.addEventListener("click", () => {
 	forms.style.opacity = '1'; 
 	forms.style.visibility = 'visible'; 
+	loginForm.classList.add('_active'); 
 });
 
 registerLink.addEventListener("click", () => {
 	loginForm.style.opacity = '0'; 
+	loginForm.style.display = 'none'; 
 	loginForm.style.visibility = 'hidden'; 
+	loginForm.classList.remove('_active'); 
 
 	registrationForm.style.opacity = '1'; 
 	registrationForm.style.visibility = 'visible'; 
+	registrationForm.classList.add('_active'); 
 });
 
 

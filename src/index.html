@@ -78,7 +78,7 @@
 					</div>
 				</div>
 			</div>
-			<div class=" header__content">
+			<div class="header__content">
 								<div class="container">
 									<div class="content__body">
 										<div class="content__title">
@@ -286,7 +286,7 @@
 		<div class="forms__overlay">
 			<div class="forms__login">
 				<h3 class="forms__title">Log in to your account</h3>
-				<div class="forms__close" id="close"><img src="img/close.svg" alt="close"></div>
+				<div class="forms__close"><img src="img/close.svg" alt="close"></div>
 
 				<div class="forms__buttons">
 					<button class="forms__button forms__button_facebook">
@@ -319,7 +319,29 @@
 					<div class="form__forgot"><a href="#" class="form__forgot_link">Forgot Your Password?</a></div>			
 				</form>
 
-				<div class="forms__register">Don’t have an account? <a href="#" class="forms__register_link">Register</a></div>
+				<div class="forms__register">Don’t have an account? <a href="#" class="forms__register_link" id="register">Register</a></div>
+				
+			</div>
+
+			<div class="forms__registration">
+				<h3 class="forms__title">Create account</h3>
+				<div class="forms__close"><img src="img/close.svg" alt="close"></div>
+
+				<form class="form form__registration" action="#">
+					<div class="form__field form__field_email">
+						<label class="form__label" for="email">E-mail</label>
+						<input type="text" class="form__input form__input_email" id="email" required>
+					</div>
+
+					<div class="form__field form__field_password">
+						<label class="form__label" for="password">Password</label>
+						<input type="password" class="form__input form__input_password" id="password" required>
+					</div>
+
+					<input type="button" class="button button__form" value="Sign In">
+				</form>
+
+				<div class="forms__register">Already have an account?<a href="#" class="forms__register_link" id="register">Log in</a></div>
 				
 			</div>
 		</div>

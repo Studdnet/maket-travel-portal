@@ -1,15 +1,28 @@
-const buttonClose = document.getElementById('close'),
+const buttonsClose = document.querySelectorAll('.forms__close'),
 		buttonLogin = document.getElementById('login'),
-		forms = document.querySelector('.forms'); 
+		forms = document.querySelector('.forms'),
+		registerLink = document.getElementById('register'),
+		loginForm = document.querySelector('.forms__login'),
+		registrationForm = document.querySelector('.forms__registration');
 
-buttonClose.addEventListener("click", () => {
+
+buttonsClose.forEach(button => button.addEventListener("click", function() {
 	forms.style.opacity = '0'; 
 	forms.style.visibility = 'hidden'; 
-});
+}));
+
 
 buttonLogin.addEventListener("click", () => {
 	forms.style.opacity = '1'; 
 	forms.style.visibility = 'visible'; 
+});
+
+registerLink.addEventListener("click", () => {
+	loginForm.style.opacity = '0'; 
+	loginForm.style.visibility = 'hidden'; 
+
+	registrationForm.style.opacity = '1'; 
+	registrationForm.style.visibility = 'visible'; 
 });
 
 

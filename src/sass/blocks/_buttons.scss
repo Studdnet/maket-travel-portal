@@ -11,6 +11,7 @@
 	line-height: 41px;
 	transition: all 0.3s ease 0s;
 
+
 	&__content {
 		width: 228px;
 		line-height: 59px;
@@ -41,11 +42,14 @@
 	}
 
 	&__form {
+		border: none;
 		height: 54px;
 		width: 100%;
 		font-weight: 400;
 		font-size: 20px;
 		line-height: 26px;
+		transition: all 0.3s ease 0s;
+
 	}
 }
 

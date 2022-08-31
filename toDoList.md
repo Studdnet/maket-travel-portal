@@ -4,3 +4,4 @@
 3. Use different resolution for different devices; 
 4. Remake button {Up}. It is necessary to do it prettier; 
 5. It is necessary modal windows for slider;
+6. To add validation of forms;
